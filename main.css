@@ -1,0 +1,369 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 57px;
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 54px;
+    background-color: white;
+    padding: 0 15px 0 15px;
+    align-items: center;
+    /*    border: solid 1px red;*/
+}
+
+#menu {
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: left;
+    width: 20%;
+}
+
+#menu-burger {
+    display: block;
+    width: 50px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#menu-burger span,
+#menu-burger span::before,
+#menu-burger span::after {
+    position: absolute;
+    top: 48%;
+    margin-top: -0.5px;
+    left: 2.5%;
+    margin-left: -0.5px;
+    width: 18px;
+    height: 1px;
+    background: #222;
+}
+#menu-burger span::before,
+#menu-burger span::after {
+    content: '';
+}
+
+#menu-burger span::before {
+    transform: translateY(-5px);
+}
+#menu-burger span::after {
+    transform: translateY(5px);
+}
+
+.header-search {
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+#search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: solid 1px rgb(203, 203, 203);
+    border-radius: 3px;
+}
+
+#search-placeholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#search-placeholder-txt {
+    border: none;
+    outline: none;
+    float: left;
+    padding-left: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16.2px;
+}
+
+#search-icon-keyboard {
+    width: 20px;
+    height: 12px;
+    margin-right: 10px;
+    float: right;
+}
+
+#search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 38px;
+    font-size: 25px;
+    border-left: solid 1px rgb(203, 203, 203);
+    background: rgb(248, 248, 248);
+    text-decoration: none;
+}
+
+#search-btn img {
+    padding: 10px;
+    width: 47px;
+    height: 40px;
+    float: right;
+    padding-left: 10px;
+}
+
+#header-microphone {
+    width: 50px;
+    height: 40px;
+    padding-left: 7px;
+}
+
+#header-settings {
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 20%;
+}
+
+#header-settings-menu {
+    width: 8px;
+    height: 17px;
+}
+
+#btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #065fd4;
+    border-radius: 2px;
+    color: #065fd4;
+    margin-left: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+    height: 35px;
+    width: 102px;
+}
+
+#img-ava-login {
+    margin-right: 10px;
+    width: 23px;
+    height: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 25px 40px 25px 40px;
+    /* border: solid 1px red; */
+    max-height: 1000px;
+    align-content: center;
+}
+
+section {
+    /*    border: solid 1px green;*/
+    border-bottom: solid 1px #eaeaea;
+}
+
+button {
+    border: 0;
+    font-weight: bold;
+    background-color: white;
+}
+
+#video {
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    margin: 0;
+    width: 66%;
+    min-width: 300px;
+    max-width: 720px;
+}
+
+#description {
+    margin-top: 15px;
+}
+
+#description h3 {
+    margin: 10px 0 10px 0;
+    font-weight: 100;
+    font-family: arial;
+    text-align: left;
+}
+
+#views {
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#description-dynamic-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.dynamic-btn {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 14px;
+    background-color: rgb(249, 249, 249);
+}
+
+.btn-icon {
+    margin-right: 8px;
+}
+
+.btn-like {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-dislike {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-share {
+    width: 22px;
+    height: 18px;
+}
+
+.btn-save {
+    width: 20px;
+    height: 15px;
+}
+
+.btn-more {
+    font-size: 20px;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 800px;
+    padding-left: 12px;
+}
+
+#ads {
+    border-bottom: solid 1px #eaeaea;
+    margin-bottom: 10px;
+}
+
+.sidebar-video {
+    display: flex;
+    margin-bottom: 10px;
+    align-self: baseline;
+}
+
+.video-min {
+    width: 168px;
+    height: 94px;
+    order: -1;
+}
+
+.sidebar-notes-video {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    height: 94px;
+    flex-basis: auto;
+    order: 1;
+    padding-left: 10px;
+}
+
+.header-sidebar-video {
+    margin: 0;
+    overflow: hidden;
+    height: 32px;
+    margin-bottom: 7px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sidebar-notes-video div {
+    color: #555555;
+    font-family: arial;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+@media (max-width: 960px) {
+    main {
+        max-height: 1800px;
+        align-items: center;
+    }
+    section {
+        width: 100%;
+    }
+
+    #sidebar {
+        width: 100%;
+        padding-left: 0;
+        order: 4;
+        height: 800px;
+    }
+    #ads {
+        width: 340px;
+    }
+    iframe {
+        order: 1;
+        width: 100%;
+    }
+    #comments {
+        order: 5;
+    }
+    #author {
+        order: 3;
+    }
+    #description {
+        order: 2;
+    }
+
+    #comments,
+    #author,
+    #description {
+        width: 100%;
+    }
+    #video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        min-width: 300px;
+        max-width: 720px;
+    }
+    #video-min {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 56px;
+    }
+}
+
+@media (min-width: 1264px) {
+    section {
+        width: 60%;
+    }
+    #sidebar {
+        width: 40%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
